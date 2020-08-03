@@ -15,8 +15,8 @@ form_class = uic.loadUiType("DL.ui")[0]
 # 메인 윈도우, 폼 출력
 ########################################################################################################################
 class MyWindow(QMainWindow, form_class):
-    # 생성자
-    def __init__(self):
+
+    def __init__(self): #생성자 : 클래스 객체가 생성될 때 자동으로 호출되는 함수
         super().__init__()  #클래스 초기화 값 상속
         self.setupUi(self)  # Load the MainFrame(form)
 
